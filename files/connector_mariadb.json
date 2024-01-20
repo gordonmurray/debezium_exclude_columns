@@ -1,0 +1,23 @@
+{
+    "column.exclude.list": "mydatabase.users.surname, mydatabase.users.email, mydatabase.users.date_of_birth",
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "database.history.kafka.bootstrap.servers": "api-xxxxxxxxxx.warpstream.com:9092",
+    "database.history.kafka.topic": "history",
+    "database.hostname": "mariadb",
+    "database.password": "rootpassword",
+    "database.port": "3306",
+    "database.server.id": "1000",
+    "database.server.name": "myconnector",
+    "database.user": "root",
+    "database.whitelist": "mydatabase",
+    "errors.log.enable": "true",
+    "errors.log.include.messages": "true",
+    "include.schema.changes": "false",
+    "schema.history.internal.kafka.bootstrap.servers": "api-xxxxxxxxxx.warpstream.com:9092",
+    "schema.history.internal.kafka.topic": "schema-changes.mydatabase",
+    "table.whitelist": "mydatabase.users",
+    "tasks.max": "1",
+    "topic.prefix": "testing",
+    "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+    "transforms": "unwrap"
+}
